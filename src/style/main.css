@@ -11,4 +11,13 @@ body {
     margin: 0 auto;
     display: block;
     max-width: 1000px;
+    background-color: #81d2c8;
+    color: #333333;
+}
+
+main {
+    background-color: #abe3d6;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
 }

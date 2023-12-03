@@ -5,8 +5,6 @@ tags: blog
 date: 2023-12-01
 ---
 
-# December Adventure Day 1
-
 I saw a couple of people mentioning this on fedi and decided to give it a go.
 I'm mostly going to be working on two closely related libre software projects and also would like to spend some time fixing up my websites.
 One of these projects, Wander, is a programming language so I'll be writing some code in that language as well as working on it directly.
