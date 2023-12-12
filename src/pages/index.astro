@@ -17,7 +17,7 @@ const posts = await Astro.glob('../pages/blerg/*.md');
 		</ul>
 		<section>Blerg</section>
 		<ul>
-			{posts.reverse().slice(0,6).map((post) => (
+			{posts.reverse().map((post) => (
 			  <li>{post.frontmatter.date.split("T")[0]} - <a href={post.url}>{post.frontmatter.title}</a></li>
 			))}
 		</ul>
