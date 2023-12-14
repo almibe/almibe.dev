@@ -20,17 +20,9 @@ function staticSiteGen() {
   return {
     name: 'static-site-gen',
 
-    moduleParsed(id) {
-      if (id.id.endsWith(".html")) {
-          console.log(JSON.stringify(id.id))
-          id.id = id.id.replace("pages", "")
-      }
-      return id
-    },
-
     buildStart(inputOptions) {
       let htmlFiles = []
-      let paths = walk.sync("./pages");
+      let paths = ["./index.md"].concat(walk.sync("./docs"));
 
       paths.forEach(function (path) {
         if (path.endsWith(".md")) {
@@ -55,7 +47,7 @@ function staticSiteGen() {
             }
           }
           data["body"] = marked.parse(content);
-          let template = fs.readFileSync(resolve(__dirname, "layout/Main.html"), 'utf-8');
+          let template = fs.readFileSync(resolve(__dirname, "layout/Main.mustache"), 'utf-8');
           let output = Mustache.render(template, data)
           let fileName = path.replace(".md", ".html");
           htmlFiles.push(fileName)
