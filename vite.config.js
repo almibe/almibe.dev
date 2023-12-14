@@ -50,8 +50,6 @@ function processMustache() {
   let data = processContent(indexTemplate);
   data.posts = blergs;
 
-  console.log(data.body)
-
   data['body'] = Mustache.render(data.body, data);
   let output = Mustache.render(layoutTemplate, data);
 
@@ -67,7 +65,7 @@ function processDocs() {
 
   paths.forEach(function (path) {
     let data = processContent(fs.readFileSync(path, 'utf-8'));
-    let template = fs.readFileSync(resolve(__dirname, 'layout/Main.mustache'), 'utf-8');
+    let template = fs.readFileSync(resolve(__dirname, 'layout/Blerg.mustache'), 'utf-8');
     let output = Mustache.render(template, data);
     let fileName = path.replace('.md', '.html');
     htmlFiles.push(fileName);
