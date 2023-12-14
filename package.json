@@ -13,10 +13,10 @@
     "lit": "^3.1.0"
   },
   "devDependencies": {
+    "glob": "^10.3.10",
     "marked": "^11.1.0",
     "mustache": "^4.2.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8",
-    "walkdir": "^0.4.1"
+    "vite": "^5.0.8"
   }
 }

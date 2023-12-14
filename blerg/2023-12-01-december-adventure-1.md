@@ -1,7 +1,5 @@
 ---
-layout: ../../layouts/Blerg.astro
 title: December Adventure Day 1
-tags: blog
 date: 2023-12-01
 ---
 

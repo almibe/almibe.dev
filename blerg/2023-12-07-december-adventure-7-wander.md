@@ -1,7 +1,5 @@
 ---
-layout: ../../layouts/Blerg.astro
 title: December Adventure Day 7 - Wander
-tags: blog
 date: 2023-12-07
 ---
 
