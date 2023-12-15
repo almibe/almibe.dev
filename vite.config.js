@@ -36,8 +36,7 @@ function nailClipperScrewdriver() {
 function processMustache() {
   let htmlFiles = []
 
-  let layoutTemplate = fs.readFileSync(resolve(__dirname, './layout/Main.mustache'), 'utf-8');
-  let indexFile = resolve(__dirname, './index.mustache');
+  let indexFile = resolve(__dirname, './index.md');
   let indexTemplate = fs.readFileSync(indexFile, 'utf-8');
 
   let blergs = globSync('blerg/**.md').map(file => {
@@ -49,11 +48,12 @@ function processMustache() {
 
   let data = processContent(indexTemplate);
   data.posts = blergs;
+  let layoutTemplate = fs.readFileSync(resolve(__dirname, './src/layout/' + data.layout), 'utf-8');
 
   data['body'] = Mustache.render(data.body, data);
   let output = Mustache.render(layoutTemplate, data);
 
-  indexFile = indexFile.replace('.mustache', '.html');
+  indexFile = indexFile.replace('.md', '.html');
   fs.writeFileSync(indexFile, output);
   htmlFiles.push(indexFile);
   return htmlFiles;
@@ -65,7 +65,7 @@ function processDocs() {
 
   paths.forEach(function (path) {
     let data = processContent(fs.readFileSync(path, 'utf-8'));
-    let template = fs.readFileSync(resolve(__dirname, 'layout/Blerg.mustache'), 'utf-8');
+    let template = fs.readFileSync(resolve(__dirname, './src/layout/Blerg.mustache'), 'utf-8');
     let output = Mustache.render(template, data);
     let fileName = path.replace('.md', '.html');
     htmlFiles.push(fileName);
