@@ -1,7 +1,7 @@
 import { basename } from "path";
 import fs from 'fs';
 import { defineConfig } from 'vite';
-import { nailClipperScrewdriver, processContent } from './ncs.js';
+import { nailClipperScrewdriver, processContent } from 'nail-clipper-screwdriver';
 import { globSync } from 'glob';
 
 export default defineConfig({
@@ -22,6 +22,6 @@ function createConfig() {
     let data = processContent(content);
     return { date: data.date, url: url, title: data.title };
   });
-  let config = { layout: 'Blerg.mustache', data: { posts: blergs } };
+  let config = { layout: 'Blerg.mustache', data: { posts: blergs }, rootDir: __dirname };
   return config;
 }

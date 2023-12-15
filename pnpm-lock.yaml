@@ -22,6 +22,9 @@ devDependencies:
   mustache:
     specifier: ^4.2.0
     version: 4.2.0
+  nail-clipper-screwdriver:
+    specifier: ^0.4.0
+    version: 0.4.0
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -632,6 +635,14 @@ packages:
   /mustache@4.2.0:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
+    dev: true
+
+  /nail-clipper-screwdriver@0.4.0:
+    resolution: {integrity: sha512-3Mjd4EX5fpteNVErpcaBirONpG5e4bZyWY2jmrEdWF+sQQPOgpuE47y8Kx3daRCt0xbuhtIXPpn3+VaunEkQUQ==}
+    dependencies:
+      glob: 10.3.10
+      marked: 11.1.0
+      mustache: 4.2.0
     dev: true
 
   /nanoid@3.3.7:
