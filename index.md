@@ -14,8 +14,8 @@ title: almibe.dev
 	</ul>
 	<section>Blerg</section>
 	<ul>
-		{{#posts}}
+		{{#data.posts}}
 			<li>{{date}} - <a href="{{{url}}}">{{title}}</a></li>
-		{{/posts}}
+		{{/data.posts}}
 	</ul>
 </main>
