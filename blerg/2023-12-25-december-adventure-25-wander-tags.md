@@ -10,10 +10,10 @@ Below I create a Tag function called Zero and use it with two bindings.
 Core.Int and Core.Bool themselves are Tags that ship with Wander.
 
 ```
-Zero = \ (i Core.Int) Core.Bool -> Core.eq i 0,
+Zero: Int -> Bool = \i -> Core.eq i 0,
 
-(z Zero) = 0, -- happy
-(z Zero) = 1  -- error
+z: Zero = 0, -- happy
+z: Zero = 1  -- error
 ```
 
 I have over half the cases where you could put tags working, but I have a feeling it will take a while to catch all the corners.
