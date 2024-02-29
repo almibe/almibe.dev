@@ -19,7 +19,8 @@ I plan on documenting this process on this blog as it transforms from being base
 
 ## Getting Started
 
-Ligature is still be developed itself and this is an early application for Ligature.
+Ligature is still being developed itself.
+This work is an early application for Ligature.
 In fact most of this early work will be figuring out what still needs to be added to Ligature in order for me to begin work on anything else.
 Although now that I think about I should be able to get started on a very simple first pass of this idea immediately.
 
