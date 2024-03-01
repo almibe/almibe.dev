@@ -37,6 +37,6 @@ Now I can produce blog articles for the site by querying for <blog-articles> and
 Since Sisal is working closely with vite to produce a website, I've decided to start work on this project in TypeScript.
 I'm going to add it to the [ligature-web](https://github.com/almibe/ligature-web) project which contains all of the TypeScript projects related to Ligature.
 
-On the Ligature side I'm going to be using [ligature-scala](https://github.com/almibe/ligature-scala) since it's the version I'm currently developing on.
-It shouldn't matter though since I'm planning on accessing Ligature via [ZeroMQ](https://zeromq.org/) and the Bend scripting language (Bend is a language for working with Ligature), so it's specific implementation won't matter.
-At first I plan on just hard coding queries in TypeScript to hit the endpoint and we'll where it goes from there.
+On the Ligature side I'm going to be using [ligature-scala](https://github.com/almibe/ligature-scala) since it's the version I'm currently developing.
+It shouldn't matter though since I'm planning on accessing Ligature via [ZeroMQ](https://zeromq.org/) and the Bend scripting language (Bend is a language for working with Ligature), so its specific implementation won't matter.
+At first, I plan on just hard coding queries in TypeScript to hit the endpoint and we'll where it goes from there.
