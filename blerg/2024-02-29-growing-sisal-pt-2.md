@@ -14,7 +14,7 @@ Yesterday I made up this as a possible example.
 ```
 
 Let's improve on that a little as a starting off spot.
-No need for the file extension, the Label for the document can just be the path.
+No need for the file extension, the Identifier for the document can just be the path.
 `contains` is pretty file centric and doesn't mention what it contains so we can probably fix that as well.
 
 ```
@@ -35,7 +35,7 @@ Now I can produce blog articles for the site by querying for <blog-articles> and
 ## Setting up Sisal
 
 Since Sisal is working closely with vite to produce a website, I've decided to start work on this project in TypeScript.
-I'm going to add it to the ligature-web project which contains all of the TypeScript projects related to Ligature.
+I'm going to add it to the [ligature-web](https://github.com/almibe/ligature-web) project which contains all of the TypeScript projects related to Ligature.
 
 On the Ligature side I'm going to be using [ligature-scala](https://github.com/almibe/ligature-scala) since it's the version I'm currently developing on.
 It shouldn't matter though since I'm planning on accessing Ligature via [ZeroMQ](https://zeromq.org/) and the Bend scripting language (Bend is a language for working with Ligature), so it's specific implementation won't matter.
