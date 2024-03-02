@@ -30,7 +30,7 @@ or
     <content> "This is some *markdown* text." }
 ```
 
-Now I can produce blog articles for the site by querying for <blog-articles> and I could also have blog articles use multiiple formats.
+Now I can produce blog articles for the site by querying for `<blog-articles>` and I could also have blog articles use multiiple formats.
 
 ## Setting up Sisal
 
