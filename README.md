@@ -1,2 +1,2 @@
-pnpm run build
-
+pnpm install
+npx @11ty/eleventy --serve

@@ -2,22 +2,13 @@
   "name": "almibe.dev",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@shoelace-style/shoelace": "^2.12.0",
-    "lit": "^3.1.0"
   },
   "devDependencies": {
-    "glob": "^10.3.10",
-    "marked": "^11.1.0",
-    "mustache": "^4.2.0",
-    "nail-clipper-screwdriver": "^0.4.0",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.8"
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }

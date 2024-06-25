@@ -1,5 +1,6 @@
 ---
 title: December Adventure Day 1
+tags: blerg
 date: 2023-12-01
 ---
 

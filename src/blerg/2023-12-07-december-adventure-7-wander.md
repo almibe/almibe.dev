@@ -1,5 +1,6 @@
 ---
 title: December Adventure Day 7 - Wander
+tags: blerg
 date: 2023-12-07
 ---
 

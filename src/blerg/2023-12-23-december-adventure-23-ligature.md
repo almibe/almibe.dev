@@ -1,5 +1,6 @@
 ---
 title: December Adventure Day 23 - Ligature
+tags: blerg
 date: 2023-12-23
 ---
 

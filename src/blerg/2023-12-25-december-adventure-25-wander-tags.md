@@ -1,5 +1,6 @@
 ---
 title: December Adventure Day 25 - Wander Tags
+tags: blerg
 date: 2023-12-25
 ---
 
