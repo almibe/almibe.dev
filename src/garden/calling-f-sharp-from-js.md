@@ -4,8 +4,6 @@ date: 2024-08-09
 tags: [garden, post]
 ---
 
-# Calling F# from JS.
-
 ## Intro
 
 Fable is a project that allows you to compile F# code for targets other than dotnet.
