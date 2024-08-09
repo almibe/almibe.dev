@@ -17,7 +17,7 @@ title: almibe.dev
 	</ul>
 	<h2>Things I'm Thinking About and Working On</h2>
 	<ul>
-		{% for blerg in collections.blerg reversed %}
+		{% for blerg in collections.post reversed %}
 		  <li>{{ blerg.data.date| date: "%Y-%m-%d" }} - <a href="{{ blerg.url }}">{{ blerg.data.title }}</a></li>
 		{% endfor %}
 	</ul>

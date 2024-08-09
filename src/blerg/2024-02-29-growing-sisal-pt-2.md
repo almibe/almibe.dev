@@ -1,6 +1,6 @@
 ---
 title: Growing Sisal - pt 2
-tags: blerg
+tags: [blerg, post]
 date: 2024-02-29
 ---
 

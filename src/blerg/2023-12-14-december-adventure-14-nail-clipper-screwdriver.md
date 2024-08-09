@@ -1,6 +1,6 @@
 ---
 title: December Adventure Day 14 - Nail Clipper Screwdriver
-tags: blerg
+tags: [blerg, post]
 date: 2023-12-14
 ---
 

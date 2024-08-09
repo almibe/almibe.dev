@@ -1,6 +1,6 @@
 ---
 title: December Adventure Day 8 - Wander
-tags: blerg
+tags: [blerg, post]
 date: 2023-12-08
 ---
 

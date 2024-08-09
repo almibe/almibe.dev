@@ -1,6 +1,6 @@
 ---
 title: December Adventure Day 1
-tags: blerg
+tags: [blerg, post]
 date: 2023-12-01
 ---
 

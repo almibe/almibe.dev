@@ -1,6 +1,6 @@
 ---
 title: December Adventure Day 25 - Wander Tags
-tags: blerg
+tags: [blerg, post]
 date: 2023-12-25
 ---
 

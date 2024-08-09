@@ -1,6 +1,6 @@
 ---
 title: Growing a Digitial Garden...ing Tool? pt 1
-tags: blerg
+tags: [blerg, post]
 date: 2024-02-28
 ---
 
