@@ -52,7 +52,7 @@ In Ligature
 
 ## Wander Functions
 
-Assuming the Terms and Assertions above are available as aBox and tBox.
+Assuming the Terms and Assertions above are available as tBox and aBox.
 
 ```
 (check tBox aBox)
@@ -61,7 +61,7 @@ Assuming the Terms and Assertions above are available as aBox and tBox.
 This would result in 
 
 ```
-{ satisified = true }
+{ satisfied = true }
 ```
 
 And calling
