@@ -4,8 +4,6 @@ date: 2024-09-14
 tags: [garden, post, design]
 ---
 
-# Encoding Description Logic in Ligature
-
 *this document is a very rough draft*
 
 This document explains my current thoughts on encoding Description Logic (specifically tiny-dl) to Ligature and Wander.
