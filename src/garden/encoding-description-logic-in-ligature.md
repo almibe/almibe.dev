@@ -6,9 +6,9 @@ tags: [garden, post, design]
 
 *this document is a very rough draft*
 
-This document explains my current thoughts on encoding Description Logic (specifically tiny-dl) to Ligature and Wander.
+This document explains my current thoughts on encoding Description Logic (specifically tiny-dl) in Ligature and Wander.
 
-In DL Notation
+DL Notation
 
 ```
 Cat ≡ ∃weighs.Weight ⊓ ∃dob.Date
@@ -29,7 +29,7 @@ Ligature Notation
   _01 arg _02
   _01 arg _03
   _02 : ∃
-  _02 role weights
+  _02 role weighs
   _02 concept Weight
   _03 : ∃
   _03 role dob
