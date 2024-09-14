@@ -8,6 +8,8 @@ tags: [garden, post, design]
 
 This document explains my current thoughts on encoding Description Logic (specifically tiny-dl) in Ligature and Wander.
 
+## Terms
+
 DL Notation
 
 ```
@@ -34,5 +36,46 @@ Ligature Notation
   _03 : ∃
   _03 role dob
   _03 concept Date
+}
+```
+
+## Assertions
+
+In Ligature
+
+```
+{
+  betty weighs 11lbs
+  betty dob 12/13/2021
+}
+```
+
+## Wander Functions
+
+Assuming the Terms and Assertions above are available as aBox and tBox.
+
+```
+(check tBox aBox)
+```
+
+This would result in 
+
+```
+{ satisified = true }
+```
+
+And calling
+
+```
+(infer tBox aBox)
+```
+
+Results in
+
+```
+{
+  betty : Cat
+  betty weighs 11lbs
+  betty dob 12/13/2021
 }
 ```
