@@ -26,7 +26,7 @@ Ligature Notation
 
 ```
 {
-  ≡ Cat _01
+  Cat ≡ _01
   _01 : ⊓
   _01 arg _02
   _01 arg _03
