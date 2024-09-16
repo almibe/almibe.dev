@@ -8,6 +8,7 @@ tags: [garden, post, design]
 
 tiny-dl is a set of libraries for working with Description Logic.
 The main implementation is in F# currently.
+See https://github.com/almibe/ligature-fs/src/tiny-dl/ and https://github.com/almibe/tiny-dl/.
 It is very new and experimental so expect apis or the entire goal of the project to change.
 
 tiny-dl is being designed with two modes of interaction in mind.
@@ -27,14 +28,14 @@ Knot ≡ ∃abok.ABoK ⊓ ∃named.Name,
 
 When this script is ran the following interpretation is generated.
 
-| Name  | Values                          |
-| ----- | ------------------------------- |
-| ∆     | { _01, #1452, "Ashley's bend" } |
-| Knot  | { _01 }                         |
-| ABoK  | { #1452 }                       |
-| Name  | { "Ashley's bend" }             |
-| abok  | { (_01, #1452) }                |
-| named | { (_01, "Ashley's bend") }      |
+| Name  | Type    | Values                          |
+| ----- | ------- | ------------------------------- |
+| ∆     | Domain  | { _01, #1452, "Ashley's bend" } |
+| Knot  | Concept | { _01 }                         |
+| ABoK  | Concept | { #1452 }                       |
+| Name  | Concept | { "Ashley's bend" }             |
+| abok  | Role    | { (_01, #1452) }                |
+| named | Role    | { (_01, "Ashley's bend") }      |
 
 ## API
 
