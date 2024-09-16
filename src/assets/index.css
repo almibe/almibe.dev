@@ -33,3 +33,13 @@ main {
 #dark {
   background-color: #494E51;
 }
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+td {
+  padding-left: .5em;
+  padding-right:2.5em;
+}

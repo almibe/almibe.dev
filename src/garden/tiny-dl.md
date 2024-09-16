@@ -37,8 +37,8 @@ When this script is ran the following interpretation is generated.
 | Cat    | { betty }                   |
 | Weight | { 11lbs }                   |
 | Date   | { 2/11/2021 }               |
-| weighs | (betty, 11lbs)              |
-| dob    | (betty, 2/11/2021)          |
+| weighs | { (betty, 11lbs) }          |
+| dob    | { (betty, 2/11/2021) }      |
 
 ## API
 
