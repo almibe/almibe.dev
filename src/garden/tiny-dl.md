@@ -40,22 +40,34 @@ When this script is ran the following interpretation is generated.
 Below is work in progress fake ebnf for the syntax
 
 ```
-Name: [0-9a-zA-Z-_]+
-AtomicConcept: Name
-Role: Name
-Invididual: Name
+AtomicConcept: name
+Role: name
+Invididual: name
+
 UnaryPredicate: Individual ':' AtomicConcept
 BinaryPredicate: '(' Individual ',' Individual ')' ':' Role
+
 ConceptDefinition: AtomicConcept '≡' ConceptExpression
 ConceptInclusion: AtomicConcept '⊑' ConceptExpression
-ConceptDisjunction: ConceptExpression '⊔' ConceptExpression
-ConceptConjunction: ConceptExpression '⊓' ConceptExpression
-ExistenialRestriction: '∃' Role '.' ConceptExpression
+
+ExistentialRestriction: '∃' Role '.' ConceptExpression
 ValueRestriction: '∀' Role '.' ConceptExpression
-Negation: '¬' ConceptExpression
-ConceptExpression: ConceptDefinition | ConceptInclusion
-Expression: UnaryPredicate | BinaryPredicate | ConceptExpression
+Grouping : '(' ConceptExpression ')'
+
+UnaryOperator: '¬'
+BinaryOperator: '⊔' | '⊓'
+
+ConceptExpression: AtomicConcept 
+                 | UnaryOperator ConceptExpression
+                 | ConceptExpression BinaryOperator ConceptExpresssion
+                 | Grouping
+                 | ExistentialRestriction
+                 | ValueRestriction
+
+Expression: UnaryPredicate | BinaryPredicate | ConceptDefinition | ConceptInclusion
 Script: (Expression ',')*
+
+name: [0-9a-zA-Z-_]+
 ```
 
 ## API
