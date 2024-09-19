@@ -1,6 +1,6 @@
 ---
 title: tiny-dl
-date: 2024-09-16
+date: 2024-09-18
 tags: [garden, post, design]
 ---
 
@@ -36,6 +36,27 @@ When this script is ran the following interpretation is generated.
 | Name  | Concept | { "Ashley's bend" }             |
 | abok  | Role    | { (_01, #1452) }                |
 | named | Role    | { (_01, "Ashley's bend") }      |
+
+Below is work in progress fake ebnf for the syntax
+
+```
+Name: [0-9a-zA-Z-_]+
+AtomicConcept: Name
+Role: Name
+Invididual: Name
+UnaryPredicate: Individual ':' AtomicConcept
+BinaryPredicate: '(' Individual ',' Individual ')' ':' Role
+ConceptDefinition: AtomicConcept '≡' ConceptExpression
+ConceptInclusion: AtomicConcept '⊑' ConceptExpression
+ConceptDisjunction: ConceptExpression '⊔' ConceptExpression
+ConceptConjunction: ConceptExpression '⊓' ConceptExpression
+ExistenialRestriction: '∃' Role '.' ConceptExpression
+ValueRestriction: '∀' Role '.' ConceptExpression
+Negation: '¬' ConceptExpression
+ConceptExpression: ConceptDefinition | ConceptInclusion
+Expression: UnaryPredicate | BinaryPredicate | ConceptExpression
+Script: (Expression ',')*
+```
 
 ## API
 
