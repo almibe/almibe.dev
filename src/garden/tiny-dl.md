@@ -47,15 +47,12 @@ Invididual: name
 UnaryPredicate: Individual ':' AtomicConcept
 BinaryPredicate: '(' Individual ',' Individual ')' ':' Role
 
-ConceptDefinition: AtomicConcept '≡' ConceptExpression
-ConceptInclusion: AtomicConcept '⊑' ConceptExpression
-
 ExistentialRestriction: '∃' Role '.' ConceptExpression
 ValueRestriction: '∀' Role '.' ConceptExpression
 Grouping : '(' ConceptExpression ')'
 
 UnaryOperator: '¬'
-BinaryOperator: '⊔' | '⊓'
+BinaryOperator: '⊔' | '⊓' | '⊑' | '≡'
 
 ConceptExpression: AtomicConcept 
                  | UnaryOperator ConceptExpression
@@ -73,3 +70,6 @@ name: [0-9a-zA-Z-_]+
 ## API
 
 ...
+
+## Tableau Algorthim Notes
+
