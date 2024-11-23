@@ -2,13 +2,13 @@
   "name": "almibe.dev",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
-  "scripts": {
-  },
+  "type": "module",
+  "scripts": {},
   "devDependencies": {
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2"
   }
 }
