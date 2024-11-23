@@ -1,6 +1,6 @@
-import feedPlugin from "@11ty/eleventy-plugin-rss";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
-export default async function(eleventyConfig) {
+export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets");
 
 	eleventyConfig.addPlugin(feedPlugin, {
