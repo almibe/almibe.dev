@@ -11,7 +11,10 @@ Along with this I plan on doing improvements on my websites and continuing my re
 
 Here are some of the resources I've been looking at so far.
 
-https://hh.gbdev.io/
-https://rgbds.gbdev.io
-https://github.com/taisel/GameBoy-Online
-https://github.com/juchi/gameboy.js/
+[https://hh.gbdev.io/]
+
+[https://rgbds.gbdev.io]
+
+[https://github.com/taisel/GameBoy-Online]
+
+[https://github.com/juchi/gameboy.js/]
