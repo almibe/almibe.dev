@@ -12,4 +12,4 @@ The way I'm imagining this working now is that you will be able to encode relati
 Eventually you'll be able to express more complex relationships like mutual exclusion, but for now I'm going to keep it minimal.
 
 As far as game boy stuff goes, I'm in the process of finding an emulator to hack on to help me learn more about the system.
-https://github.com/mvdnes/rboy looks like a promising option.
+[rboy](https://github.com/mvdnes/rboy) looks like a promising option.
