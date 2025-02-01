@@ -1,6 +1,6 @@
 ---
 title: Expressing Network Models as Documents
-date: 2024-01-31
+date: 2025-01-31
 tags: [garden, post, design, data-modeling, sisal]
 ---
 
