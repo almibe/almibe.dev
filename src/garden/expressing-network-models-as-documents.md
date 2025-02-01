@@ -10,7 +10,7 @@ As I'm making progress on sisal, an 11ty plugin for working with Ligature's data
 Ideally I want to be able to write Wander scripts that allows me to work with Ligature's data model internally and produce something that can be easily used by 11ty to produce websites.
 I decided to try to fit within 11ty's conventions as much as possible, so Wander files that produce data should work similarly to how JavaScript files that supply data work.
 
-[https://www.11ty.dev/docs/data-js/]
+[JavaScript Data Files](https://www.11ty.dev/docs/data-js/)
 
 One difference is that since Wander is stack based instead of exporting data it uses the convention of exporting the value left on the stack after running the script.
 I've decided also by convention to expect a json string literal as the result.
@@ -43,6 +43,9 @@ produces
 
 Finally to get from the Network to a Quote that can be used to create JSON we can use the query Action.
 The query Action reads three Terms from the Stack, the network to search, the pattern to search for, and the template to create results, and pushes the result on the Stack as a Quote.
+Then there is some minor changes needed to work with the to-json action.
+In this case the keyword array needs to be prepended to the Quote representing the JSON data.
+This is just an initial pass so there are opportunities to provide a dedicated Action for this later.
 
 ```wander
 { article1 title "Bah",
@@ -56,5 +59,6 @@ display-stack
 ```
 
 ```
- → "[{\"id\":\"article2\",\"title\":\"Bork\",\"author\":\"Dog\"},{\"id\":\"article1\",\"title\":\"Bah\",\"author\":\"Sheep\"}]"
+ → "[{\"id\":\"article2\",\"title\":\"Bork\",\"author\":\"Dog\"},
+    {\"id\":\"article1\",\"title\":\"Bah\",\"author\":\"Sheep\"}]"
 ```
