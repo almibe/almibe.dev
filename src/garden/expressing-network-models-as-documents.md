@@ -1,7 +1,7 @@
 ---
 title: Expressing Network Models as Documents
-date: 2024-1-31
-tags: [garden, post, design]
+date: 2024-01-31
+tags: [garden, post, design, data-modeling, sisal]
 ---
 
 *this document is a very rough draft*
@@ -20,7 +20,7 @@ With that background now we can start to think about producing data that is usua
 
 Let's start with some very basic metadata in a network.
 
-```
+```wander
 { article1 title "Bah",
   article1 author "Sheep",
   article2 title "Bork",
